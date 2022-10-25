@@ -18,6 +18,7 @@
 		3000258229088A9F005DCC10 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3000258129088A9F005DCC10 /* SettingsViewController.swift */; };
 		3000258429089572005DCC10 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3000258329089572005DCC10 /* TabBarViewController.swift */; };
 		30002586290897B2005DCC10 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30002585290897B2005DCC10 /* Settings.swift */; };
+		30002588290899A2005DCC10 /* RelatedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30002587290899A2005DCC10 /* RelatedInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3000258129088A9F005DCC10 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3000258329089572005DCC10 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		30002585290897B2005DCC10 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		30002587290899A2005DCC10 /* RelatedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3000258329089572005DCC10 /* TabBarViewController.swift */,
 				3000257F29088A28005DCC10 /* TopicsViewController.swift */,
 				3000258129088A9F005DCC10 /* SettingsViewController.swift */,
+				30002587290899A2005DCC10 /* RelatedInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30002588290899A2005DCC10 /* RelatedInfoViewController.swift in Sources */,
 				08F2691129071C980035B8B0 /* MainViewController.swift in Sources */,
 				3000258229088A9F005DCC10 /* SettingsViewController.swift in Sources */,
 				30002586290897B2005DCC10 /* Settings.swift in Sources */,

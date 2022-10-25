@@ -15,6 +15,13 @@ class TopicsViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = 50
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let relatedInfoVC = segue.destination  as? RelatedInfoViewController
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        relatedInfoVC?.info = topics[indexPath.row]
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -33,3 +40,4 @@ extension TopicsViewController {
         return cell
     }
 }
+
