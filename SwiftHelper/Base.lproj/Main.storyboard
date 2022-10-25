@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-Z7-jgO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amD-tx-f5J">
                                 <rect key="frame" x="174" y="411.66666666666669" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -26,8 +26,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5mO-Z7-jgO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ruu-XZ-J4y"/>
-                            <constraint firstItem="5mO-Z7-jgO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gRF-cI-O3j"/>
+                            <constraint firstItem="amD-tx-f5J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BPX-Tb-jaj"/>
+                            <constraint firstItem="amD-tx-f5J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KTe-yd-xu2"/>
                         </constraints>
                     </view>
                 </viewController>
