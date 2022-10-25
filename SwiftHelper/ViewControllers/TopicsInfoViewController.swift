@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RelatedInfoViewController: UIViewController {
+class TopicsInfoViewController: UIViewController {
     
     @IBOutlet var infoLabel: UILabel!
     

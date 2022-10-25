@@ -18,7 +18,7 @@ class TopicsViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let relatedInfoVC = segue.destination  as? RelatedInfoViewController
+        let relatedInfoVC = segue.destination  as? TopicsInfoViewController
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         relatedInfoVC?.info = topics[indexPath.row]
     }
