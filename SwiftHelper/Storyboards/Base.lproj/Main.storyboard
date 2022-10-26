@@ -122,6 +122,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GzZ-zp-otF">
+                                <rect key="frame" x="16" y="67" width="288" height="481"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VRH-9l-4IU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -134,11 +142,12 @@
                     <navigationItem key="navigationItem" id="FCg-Ar-d4D"/>
                     <connections>
                         <outlet property="infoLabel" destination="r4B-yL-ss5" id="hPK-B1-fAX"/>
+                        <outlet property="textView" destination="GzZ-zp-otF" id="hX5-ue-vaW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5x-Kh-iNi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3143" y="-311"/>
+            <point key="canvasLocation" x="3142.5" y="-311.61971830985914"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bJw-EU-9Mx">

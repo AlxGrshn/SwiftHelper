@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08CDDBD329097FD500EFA389 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDDBD229097FD500EFA389 /* DataStore.swift */; };
 		08F2690D29071C980035B8B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2690C29071C980035B8B0 /* AppDelegate.swift */; };
 		08F2690F29071C980035B8B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2690E29071C980035B8B0 /* SceneDelegate.swift */; };
 		08F2691129071C980035B8B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2691029071C980035B8B0 /* MainViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08CDDBD229097FD500EFA389 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		08F2690929071C980035B8B0 /* SwiftHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F2690C29071C980035B8B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08F2690E29071C980035B8B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CDDBD429097FDF00EFA389 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				08CDDBD229097FD500EFA389 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		08F2690029071C980035B8B0 = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +82,9 @@
 		08F2690B29071C980035B8B0 /* SwiftHelper */ = {
 			isa = PBXGroup;
 			children = (
+				08CDDBD429097FDF00EFA389 /* Services */,
 				3000257929088006005DCC10 /* Models */,
 				3000257729087FDE005DCC10 /* ViewControllers */,
-				3000257C2908843D005DCC10 /* Services */,
 				3000257629087FD7005DCC10 /* Storyboards */,
 				3000257829087FE7005DCC10 /* Sources */,
 				3000257529087FCF005DCC10 /* App */,
@@ -130,13 +140,6 @@
 				300505752909367E0009C5AB /* Team.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		3000257C2908843D005DCC10 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +216,7 @@
 				30002588290899A2005DCC10 /* TopicsInfoViewController.swift in Sources */,
 				08F2691129071C980035B8B0 /* MainViewController.swift in Sources */,
 				3000258229088A9F005DCC10 /* SettingsViewController.swift in Sources */,
+				08CDDBD329097FD500EFA389 /* DataStore.swift in Sources */,
 				30002586290897B2005DCC10 /* Settings.swift in Sources */,
 				3000258029088A28005DCC10 /* TopicsViewController.swift in Sources */,
 				3000257B29088338005DCC10 /* Topic.swift in Sources */,

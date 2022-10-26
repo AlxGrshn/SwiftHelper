@@ -10,6 +10,7 @@ import UIKit
 class TopicsInfoViewController: UIViewController {
     
     @IBOutlet var infoLabel: UILabel!
+    @IBOutlet var textView: UITextView!
     
     var info: Topic!
     
@@ -17,5 +18,6 @@ class TopicsInfoViewController: UIViewController {
         super.viewDidLoad()
         title = info.title
         infoLabel.text = info.title
+        textView.text = ThemesStorage.shared.themes.values.first
     }
 }
