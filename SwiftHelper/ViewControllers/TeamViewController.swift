@@ -42,7 +42,7 @@ extension TeamViewController {
         default:
             content.image = UIImage(systemName: Pictures.git.rawValue)
         }
-        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+
         //cell.backgroundColor = .lightGray
         cell.contentConfiguration = content
         return cell
