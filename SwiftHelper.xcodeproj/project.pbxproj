@@ -74,7 +74,6 @@
 			children = (
 				3000257929088006005DCC10 /* Models */,
 				3000257729087FDE005DCC10 /* ViewControllers */,
-				3000257C2908843D005DCC10 /* Services */,
 				3000257629087FD7005DCC10 /* Storyboards */,
 				3000257829087FE7005DCC10 /* Sources */,
 				3000257529087FCF005DCC10 /* App */,
@@ -130,13 +129,6 @@
 				300505752909367E0009C5AB /* Team.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		3000257C2908843D005DCC10 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

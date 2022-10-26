@@ -101,7 +101,7 @@
                             <outlet property="delegate" destination="g55-2b-Vwp" id="rhA-cW-rqm"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Темы" image="list.bullet.clipboard" catalog="system" id="MPS-76-Qx0"/>
+                    <tabBarItem key="tabBarItem" title="Темы" image="list.bullet.rectangle.portrait" catalog="system" id="MPS-76-Qx0"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Ftk-ER-lzE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2Z-Nm-5Gd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -253,7 +253,7 @@
     </scenes>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="123"/>
-        <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="person.2" catalog="system" width="128" height="82"/>
         <image name="swift" catalog="system" width="128" height="108"/>
         <systemColor name="labelColor">
