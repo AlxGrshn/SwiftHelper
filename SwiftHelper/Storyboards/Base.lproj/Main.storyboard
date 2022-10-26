@@ -31,7 +31,6 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="141" id="ayQ-A8-8hv"/>
-                                            <constraint firstAttribute="height" constant="141" id="oUm-0r-KFj"/>
                                         </constraints>
                                         <string key="text">SwiftHelper поможет всегда под рукой иметь ответы на рядовые вопросы по языку Swift. Мы постарались собрать как базвоые темы так и некоторые "хаки".</string>
                                         <color key="textColor" systemColor="labelColor"/>
