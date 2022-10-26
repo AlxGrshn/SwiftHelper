@@ -15,12 +15,17 @@ class TabBarViewController: UITabBarController {
     }
     
     func transferData() {
-        guard let topicsVC = viewControllers?.first as? TopicsViewController else { return }
-        guard let settingsVC = viewControllers?.last as? SettingsViewController else { return }
-        
-        let topics = Topic.getTopics()
-        let settings = Settings.getSettings()
-        topicsVC.topics = topics
-        settingsVC.settings = settings
+        viewControllers?.forEach {
+            if let topicsVC = $0 as? TopicsViewController {
+                let topics = Topic.getTopics()
+                topicsVC.topics = topics
+            } else if let settingsVC = $0 as? SettingsViewController {
+                let settings = Settings.getSettings()
+                settingsVC.settings = settings
+            } else if let teamVC = $0 as? TeamViewController {
+                let team = Team.getTeamInfo()
+                teamVC.team = team
+            }
+        }
     }
 }
