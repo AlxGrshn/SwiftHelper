@@ -72,7 +72,7 @@
                             <outlet property="delegate" destination="g55-2b-Vwp" id="rhA-cW-rqm"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Topics" image="list.bullet.clipboard" catalog="system" id="MPS-76-Qx0"/>
+                    <tabBarItem key="tabBarItem" title="Темы" image="list.bullet.clipboard" catalog="system" id="MPS-76-Qx0"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Ftk-ER-lzE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2Z-Nm-5Gd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -137,11 +137,15 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="974-ar-eOG">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="g55-2b-Vwp" kind="relationship" relationship="viewControllers" id="iVW-wf-gUD"/>
                         <segue destination="t5h-e8-mcV" kind="relationship" relationship="viewControllers" id="syW-fW-Hf5"/>
+                        <segue destination="3Mz-gR-hzV" kind="relationship" relationship="viewControllers" id="oO8-ZC-nNF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZ8-z0-EzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -162,6 +166,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m3c-Yu-AFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3143" y="354"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="Np2-bk-Pd1">
+            <objects>
+                <tableViewController id="3Mz-gR-hzV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Lb7-CJ-4RL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Gro-Gt-9zw">
+                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gro-Gt-9zw" id="B2C-19-ik0">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3Mz-gR-hzV" id="wC2-BP-5ES"/>
+                            <outlet property="delegate" destination="3Mz-gR-hzV" id="w29-bB-xzv"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Команда" image="person.2" catalog="system" id="dnc-z1-wFK"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="seO-hn-hlv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozi-qQ-Ple" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611" y="777"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="gGc-Cb-yOA">
@@ -195,7 +229,7 @@
                             <outlet property="delegate" destination="t5h-e8-mcV" id="hyS-8h-gpE"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="cEY-1B-TZA"/>
+                    <tabBarItem key="tabBarItem" title="Настройки" image="gearshape" catalog="system" id="cEY-1B-TZA"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="cfd-6i-6V0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HqM-XC-NqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -206,6 +240,7 @@
     <resources>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <image name="person.2" catalog="system" width="128" height="82"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

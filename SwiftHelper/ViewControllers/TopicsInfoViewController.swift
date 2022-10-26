@@ -15,6 +15,7 @@ class TopicsInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        infoLabel.text = info.theme
+        title = info.title
+        infoLabel.text = info.title
     }
 }

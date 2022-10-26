@@ -6,20 +6,20 @@
 //
 
 struct Topic {
-    let theme: String
+    let title: String
     
     static func getTopics() -> [Topic] {
         [
-            Topic(theme: "Константы и переменные"),
-            Topic(theme: "Типы свойств"),
-            Topic(theme: "Базовые операторы"),
-            Topic(theme: "Операторы ветвлений"),
-            Topic(theme: "Типы коллекций"),
-            Topic(theme: "Функции"),
-            Topic(theme: "Замыкания"),
-            Topic(theme: "Классы"),
-            Topic(theme: "Структуры"),
-            Topic(theme: "Перечисления")
+            Topic(title: "Константы и переменные"),
+            Topic(title: "Типы свойств"),
+            Topic(title: "Базовые операторы"),
+            Topic(title: "Операторы ветвлений"),
+            Topic(title: "Типы коллекций"),
+            Topic(title: "Функции"),
+            Topic(title: "Замыкания"),
+            Topic(title: "Классы"),
+            Topic(title: "Структуры"),
+            Topic(title: "Перечисления")
         ]
     }
 }

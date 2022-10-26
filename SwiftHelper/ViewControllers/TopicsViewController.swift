@@ -34,7 +34,7 @@ extension TopicsViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "topics", for: indexPath)
         let topic = topics[indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = topic.theme
+        content.text = topic.title
         cell.contentConfiguration = content
         
         return cell
