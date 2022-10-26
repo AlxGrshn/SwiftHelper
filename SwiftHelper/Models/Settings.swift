@@ -10,10 +10,10 @@ struct Settings {
     
     static func getSettings() -> [Settings] {
         [
+            Settings(theme: "Тема экрана"),
             Settings(theme: "Стиль шрифта"),
             Settings(theme: "Цвет шрифта"),
-            Settings(theme: "О приложении"),
-            Settings(theme: "Контакты")
+            Settings(theme: "Размер шрифта")
         ]
     }
 }

@@ -13,6 +13,7 @@ class TeamViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        view.backgroundColor = .darkGray
     }
 }
 
@@ -41,7 +42,8 @@ extension TeamViewController {
         default:
             content.image = UIImage(systemName: Pictures.git.rawValue)
         }
-        //content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        //cell.backgroundColor = .lightGray
         cell.contentConfiguration = content
         return cell
     }
@@ -73,7 +75,7 @@ extension TeamViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .lightGray
     }
 
     
