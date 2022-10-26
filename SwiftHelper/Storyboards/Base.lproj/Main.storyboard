@@ -17,26 +17,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5b-iF-t77">
-                                <rect key="frame" x="121.5" y="266.5" width="77" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Get try"/>
-                                <connections>
-                                    <segue destination="Dj1-u7-sSa" kind="presentation" modalPresentationStyle="fullScreen" id="b2m-jy-6pM"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="odp-dM-pfN">
+                                <rect key="frame" x="16" y="122" width="288" height="324"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет 👋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-U3-2Mo">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Iwl-DU-TQH">
+                                        <rect key="frame" x="0.0" y="76" width="288" height="141"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="141" id="ayQ-A8-8hv"/>
+                                        </constraints>
+                                        <string key="text">SwiftHelper поможет всегда под рукой иметь ответы на рядовые вопросы по языку Swift. Мы постарались собрать как базвоые темы так и некоторые "хаки".</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5b-iF-t77">
+                                        <rect key="frame" x="0.0" y="257" width="288" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="MjO-gu-cqt"/>
+                                        </constraints>
+                                        <buttonConfiguration key="configuration" style="plain" image="swift" catalog="system" title="Вперед!" cornerStyle="dynamic">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Dj1-u7-sSa" kind="presentation" modalPresentationStyle="fullScreen" id="b2m-jy-6pM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="C5b-iF-t77" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VP5-xp-QHy"/>
-                            <constraint firstItem="C5b-iF-t77" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oOU-vF-n2G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="odp-dM-pfN" secondAttribute="bottom" constant="122" id="ZvT-Gt-hpL"/>
+                            <constraint firstItem="odp-dM-pfN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="g8S-HL-6BX"/>
+                            <constraint firstItem="odp-dM-pfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="out-Dv-r6z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="odp-dM-pfN" secondAttribute="trailing" constant="16" id="pmv-tg-aNl"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="-15"/>
+            <point key="canvasLocation" x="208.125" y="-16.901408450704224"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Zis-hB-eFL">
@@ -227,6 +255,10 @@
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
         <image name="person.2" catalog="system" width="128" height="82"/>
+        <image name="swift" catalog="system" width="128" height="108"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
