@@ -16,7 +16,7 @@ struct Team {
     
     static func getTeamInfo() -> [Team] {
         [
-            Team(name: "Alexandr", telegram: "@Frysed", git: "https://github.com/AlxGrshn"),
+            Team(name: "Alexander", telegram: "@Frysed", git: "https://github.com/AlxGrshn"),
             Team(name: "Artemy", telegram: "@artvs18",  git: "https://github.com/artvs18"),
             Team(name: "Danil", telegram: "@monolit_granit",  git: "https://github.com/"),
             Team(name: "Roman", telegram: "@romesky",  git: "https://github.com/Trome29")
