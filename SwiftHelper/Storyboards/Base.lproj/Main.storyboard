@@ -119,7 +119,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Темы" image="list.bullet.rectangle.portrait" catalog="system" id="MPS-76-Qx0"/>
                     <navigationItem key="navigationItem" title="Темы" id="Ftk-ER-lzE">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="0P4-RN-Hkh">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.3" catalog="system" id="0P4-RN-Hkh">
                             <connections>
                                 <segue destination="3Mz-gR-hzV" kind="show" id="E6W-UK-R7R"/>
                             </connections>
@@ -165,7 +165,6 @@
         <!--Команда-->
         <scene sceneID="Np2-bk-Pd1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ozi-qQ-Ple" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="3Mz-gR-hzV" customClass="TeamViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Lb7-CJ-4RL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -189,14 +188,15 @@
                     <tabBarItem key="tabBarItem" title="Команда" image="person.2" catalog="system" id="dnc-z1-wFK"/>
                     <navigationItem key="navigationItem" title="Команда" id="seO-hn-hlv"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozi-qQ-Ple" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2546" y="-346"/>
         </scene>
     </scenes>
     <resources>
-        <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="person.2" catalog="system" width="128" height="82"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="swift" catalog="system" width="128" height="108"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
