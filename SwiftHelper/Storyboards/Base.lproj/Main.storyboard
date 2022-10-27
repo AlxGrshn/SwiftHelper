@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bmr-pH-eYk">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,63 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="odp-dM-pfN">
-                                <rect key="frame" x="16" y="122" width="288" height="324"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет 👋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuM-U3-2Mo">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Iwl-DU-TQH">
-                                        <rect key="frame" x="0.0" y="76" width="288" height="141"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="141" id="ayQ-A8-8hv"/>
-                                        </constraints>
-                                        <string key="text">SwiftHelper поможет всегда под рукой иметь ответы на рядовые вопросы по языку Swift. Мы постарались собрать как базвоые темы так и некоторые "хаки".</string>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5b-iF-t77">
-                                        <rect key="frame" x="0.0" y="257" width="288" height="67"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="67" id="MjO-gu-cqt"/>
-                                        </constraints>
-                                        <buttonConfiguration key="configuration" style="plain" image="swift" catalog="system" title="Вперед!" cornerStyle="dynamic">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="Bmr-pH-eYk" kind="presentation" modalPresentationStyle="fullScreen" id="Ij3-gy-uzS"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="odp-dM-pfN" secondAttribute="bottom" constant="122" id="ZvT-Gt-hpL"/>
-                            <constraint firstItem="odp-dM-pfN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="g8S-HL-6BX"/>
-                            <constraint firstItem="odp-dM-pfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="out-Dv-r6z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="odp-dM-pfN" secondAttribute="trailing" constant="16" id="pmv-tg-aNl"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="88" y="-16"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gKC-41-o3U">
             <objects>
@@ -119,7 +62,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Темы" image="list.bullet.rectangle.portrait" catalog="system" id="MPS-76-Qx0"/>
                     <navigationItem key="navigationItem" title="Темы" id="Ftk-ER-lzE">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.3" catalog="system" id="0P4-RN-Hkh">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="0P4-RN-Hkh">
                             <connections>
                                 <segue destination="3Mz-gR-hzV" kind="show" id="E6W-UK-R7R"/>
                             </connections>
@@ -162,7 +105,7 @@
             </objects>
             <point key="canvasLocation" x="2548" y="349"/>
         </scene>
-        <!--Команда-->
+        <!--About App-->
         <scene sceneID="Np2-bk-Pd1">
             <objects>
                 <tableViewController id="3Mz-gR-hzV" customClass="TeamViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,13 +114,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="team" id="Gro-Gt-9zw">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Gro-Gt-9zw">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gro-Gt-9zw" id="B2C-19-ik0">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="CnS-pC-xlq" kind="show" id="MCr-m7-JqU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -186,18 +132,51 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Команда" image="person.2" catalog="system" id="dnc-z1-wFK"/>
-                    <navigationItem key="navigationItem" title="Команда" id="seO-hn-hlv"/>
+                    <navigationItem key="navigationItem" title="About App" id="seO-hn-hlv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozi-qQ-Ple" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2546" y="-346"/>
         </scene>
+        <!--About App View Controller-->
+        <scene sceneID="frp-wP-wo4">
+            <objects>
+                <viewController id="CnS-pC-xlq" customClass="AboutAppViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="olt-0O-8vG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Keep It Simple and Swifty " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GGD-DA-Bo2">
+                                <rect key="frame" x="16" y="64" width="288" height="484"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AER-VI-cpO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GGD-DA-Bo2" firstAttribute="top" secondItem="AER-VI-cpO" secondAttribute="top" constant="20" id="Fqe-qA-Mdr"/>
+                            <constraint firstItem="AER-VI-cpO" firstAttribute="bottom" secondItem="GGD-DA-Bo2" secondAttribute="bottom" constant="20" id="My3-4x-jyw"/>
+                            <constraint firstItem="AER-VI-cpO" firstAttribute="trailing" secondItem="GGD-DA-Bo2" secondAttribute="trailing" constant="16" id="aDJ-Jq-mi7"/>
+                            <constraint firstItem="GGD-DA-Bo2" firstAttribute="leading" secondItem="AER-VI-cpO" secondAttribute="leading" constant="16" id="eVo-KY-5hA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="e4p-gK-Zl8"/>
+                    <connections>
+                        <outlet property="textView" destination="GGD-DA-Bo2" id="r90-ba-ABU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RH-sE-7F0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3300" y="-346"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="person.2" catalog="system" width="128" height="82"/>
-        <image name="person.3" catalog="system" width="128" height="62"/>
-        <image name="swift" catalog="system" width="128" height="108"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
