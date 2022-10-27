@@ -15,9 +15,6 @@
 		08F2691929071C9A0035B8B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F2691729071C9A0035B8B0 /* LaunchScreen.storyboard */; };
 		3000257B29088338005DCC10 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3000257A29088338005DCC10 /* Topic.swift */; };
 		3000258029088A28005DCC10 /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3000257F29088A28005DCC10 /* TopicsViewController.swift */; };
-		3000258229088A9F005DCC10 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3000258129088A9F005DCC10 /* SettingsViewController.swift */; };
-		3000258429089572005DCC10 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3000258329089572005DCC10 /* TabBarViewController.swift */; };
-		30002586290897B2005DCC10 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30002585290897B2005DCC10 /* Settings.swift */; };
 		30002588290899A2005DCC10 /* TopicsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30002587290899A2005DCC10 /* TopicsInfoViewController.swift */; };
 		30050574290933AE0009C5AB /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30050573290933AE0009C5AB /* TeamViewController.swift */; };
 		300505762909367E0009C5AB /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300505752909367E0009C5AB /* Team.swift */; };
@@ -34,9 +31,6 @@
 		08F2691A29071C9A0035B8B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3000257A29088338005DCC10 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		3000257F29088A28005DCC10 /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
-		3000258129088A9F005DCC10 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		3000258329089572005DCC10 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		30002585290897B2005DCC10 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		30002587290899A2005DCC10 /* TopicsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsInfoViewController.swift; sourceTree = "<group>"; };
 		30050573290933AE0009C5AB /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		300505752909367E0009C5AB /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
@@ -104,10 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				08F2691029071C980035B8B0 /* MainViewController.swift */,
-				3000258329089572005DCC10 /* TabBarViewController.swift */,
 				3000257F29088A28005DCC10 /* TopicsViewController.swift */,
 				30002587290899A2005DCC10 /* TopicsInfoViewController.swift */,
-				3000258129088A9F005DCC10 /* SettingsViewController.swift */,
 				30050573290933AE0009C5AB /* TeamViewController.swift */,
 			);
 			path = ViewControllers;
@@ -125,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				3000257A29088338005DCC10 /* Topic.swift */,
-				30002585290897B2005DCC10 /* Settings.swift */,
 				300505752909367E0009C5AB /* Team.swift */,
 			);
 			path = Models;
@@ -204,11 +195,8 @@
 			files = (
 				30002588290899A2005DCC10 /* TopicsInfoViewController.swift in Sources */,
 				08F2691129071C980035B8B0 /* MainViewController.swift in Sources */,
-				3000258229088A9F005DCC10 /* SettingsViewController.swift in Sources */,
-				30002586290897B2005DCC10 /* Settings.swift in Sources */,
 				3000258029088A28005DCC10 /* TopicsViewController.swift in Sources */,
 				3000257B29088338005DCC10 /* Topic.swift in Sources */,
-				3000258429089572005DCC10 /* TabBarViewController.swift in Sources */,
 				08F2690D29071C980035B8B0 /* AppDelegate.swift in Sources */,
 				300505762909367E0009C5AB /* Team.swift in Sources */,
 				08F2690F29071C980035B8B0 /* SceneDelegate.swift in Sources */,
@@ -359,6 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z69HT693PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftHelper/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -372,7 +361,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.icandev.SwiftHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artvs18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -390,6 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z69HT693PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftHelper/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -403,7 +393,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.icandev.SwiftHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artvs18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

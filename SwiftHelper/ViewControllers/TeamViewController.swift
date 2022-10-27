@@ -9,7 +9,7 @@ import UIKit
 
 class TeamViewController: UITableViewController {
     
-    var team: [Team] = []
+    var team: [Team] = Team.getTeamInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
