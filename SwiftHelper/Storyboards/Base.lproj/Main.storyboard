@@ -119,7 +119,7 @@
             </objects>
             <point key="canvasLocation" x="2542.5" y="348.59154929577466"/>
         </scene>
-        <!--About App-->
+        <!--Информация-->
         <scene sceneID="Np2-bk-Pd1">
             <objects>
                 <tableViewController id="3Mz-gR-hzV" customClass="TeamViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,7 +146,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Команда" image="person.2" catalog="system" id="dnc-z1-wFK"/>
-                    <navigationItem key="navigationItem" title="About App" id="seO-hn-hlv"/>
+                    <navigationItem key="navigationItem" title="Информация" id="seO-hn-hlv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozi-qQ-Ple" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,7 +160,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Keep It Simple and Swifty " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GGD-DA-Bo2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Keep It Simple and Swifty " translatesAutoresizingMaskIntoConstraints="NO" id="GGD-DA-Bo2">
                                 <rect key="frame" x="16" y="64" width="288" height="484"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>

@@ -24,7 +24,7 @@ struct Team {
             Team(name: "Alexander", surname: nil, telegram: "@Frysed", git: "https://github.com/AlxGrshn"),
             Team(name: "Artemy", surname: "Volkov", telegram: "@artvs18",  git: "https://github.com/artvs18"),
             Team(name: "Danil", surname: "Kazakov", telegram: "@kdenononame",  git: "https://github.com/"),
-            Team(name: "Roman", surname: nil, telegram: "@romesky",  git: "https://github.com/Trome29")
+            Team(name: "Роман", surname: nil, telegram: "@romesky",  git: "https://github.com/Trome29")
         ]
     }
 }

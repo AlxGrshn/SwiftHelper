@@ -42,7 +42,7 @@ extension TeamViewController {
         
         switch indexPath.section {
         case 0:
-            content.text = "App description"
+            content.text = "О приложении"
         default:
             content.text = team[indexPath.row].fullName
         }
@@ -69,8 +69,8 @@ extension TeamViewController {
         )
         
         switch section {
-        case 0: infoLabel.text = "App description"
-        default: infoLabel.text = "Team members"
+        case 0: infoLabel.text = ""
+        default: infoLabel.text = "Команда"
         }
         
         setup(infoLabel)
@@ -82,7 +82,7 @@ extension TeamViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .lightGray
     }
 
     
