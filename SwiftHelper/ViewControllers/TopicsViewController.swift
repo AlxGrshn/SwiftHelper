@@ -9,7 +9,7 @@ import UIKit
 
 class TopicsViewController: UITableViewController {
     
-    var topics: [Topic] = []
+    var topics: [Topic] = Topic.getTopics()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ extension TopicsViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "topics", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "topic", for: indexPath)
         let topic = topics[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = topic.title
