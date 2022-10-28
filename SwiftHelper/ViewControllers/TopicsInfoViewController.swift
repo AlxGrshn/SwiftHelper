@@ -9,14 +9,14 @@ import UIKit
 
 class TopicsInfoViewController: UIViewController {
     
+    @IBOutlet var infoLabel: UILabel!
     
-    @IBOutlet var infoTextView: UITextView!
     
     var info: Topic!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = info.title
-        infoTextView.text = info.description
+        infoLabel.text = info.description
     }
 }
