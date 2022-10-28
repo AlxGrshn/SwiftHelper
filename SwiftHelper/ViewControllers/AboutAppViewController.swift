@@ -18,15 +18,13 @@ class AboutAppViewController: UIViewController {
         if teamMember != nil {
             textView.text =
                 """
-                \(teamMember?.fullName ?? "")
+                👨‍💻\(teamMember?.fullName ?? "")
                 
-                GitHub: \(teamMember?.git ?? "")
+                ☁️GitHub: \(teamMember?.git ?? "")
                 
-                Telegram: \(teamMember?.telegram ?? "")
+                📱Telegram: \(teamMember?.telegram ?? "")
                 """
-        }
-        
-        if appDescription != nil {
+        } else if appDescription != nil {
             textView.text = appDescription ?? ""
         }
     }
