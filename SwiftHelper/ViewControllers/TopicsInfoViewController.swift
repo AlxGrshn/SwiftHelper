@@ -9,7 +9,9 @@ import UIKit
 
 class TopicsInfoViewController: UIViewController {
     
-    @IBOutlet var infoLabel: UILabel!
+    
+    @IBOutlet var infoTextView: UITextView!
+    @IBOutlet var infoImageView: UIImageView!
     
     
     var info: Topic!
@@ -17,6 +19,7 @@ class TopicsInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = info.title
-        infoLabel.text = info.description
+        infoTextView.text = info.description
+        infoImageView.image = UIImage(named: info.title)
     }
 }
