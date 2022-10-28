@@ -14,6 +14,7 @@ class TopicsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
+        navigationItem.leftBarButtonItem = editButtonItem
     }
     
     // MARK: - Navigation
@@ -41,3 +42,18 @@ extension TopicsViewController {
     }
 }
 
+// MARK: - UITableViewDelegete
+extension TopicsViewController {
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        .none
+    }
+    
+    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        false
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let currentTopic = topics.remove(at: sourceIndexPath.row)
+        topics.insert(currentTopic, at: destinationIndexPath.row)
+    }
+}
