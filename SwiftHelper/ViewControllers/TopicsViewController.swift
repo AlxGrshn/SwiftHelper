@@ -9,6 +9,7 @@ import UIKit
 
 class TopicsViewController: UITableViewController {
     
+    private let isFavorite = false
     private let searchController = UISearchController(searchResultsController: nil)
     private var searchBarIsEmpty: Bool {
         guard let text = searchController.searchBar.text else { return false }
