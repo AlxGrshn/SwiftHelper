@@ -8,6 +8,7 @@
 import UIKit
 
 class TeamViewController: UITableViewController {
+    
     private let team = Team.getMembersInfo()
     private let appDescription = AppDescription.getAppDescription()
     
@@ -42,7 +43,7 @@ extension TeamViewController {
         
         switch indexPath.section {
         case 0:
-            content.text = "App description"
+            content.text = "О приложении"
         default:
             content.text = team[indexPath.row].fullName
         }
@@ -52,6 +53,7 @@ extension TeamViewController {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension TeamViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -69,8 +71,8 @@ extension TeamViewController {
         )
         
         switch section {
-        case 0: infoLabel.text = "App description"
-        default: infoLabel.text = "Team members"
+        case 0: infoLabel.text = ""
+        default: infoLabel.text = "Команда"
         }
         
         setup(infoLabel)
@@ -82,9 +84,8 @@ extension TeamViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .lightGray
     }
-
     
     func setup(_ label: UILabel) {
         label.font = UIFont.boldSystemFont(ofSize: 17)

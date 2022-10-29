@@ -81,31 +81,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4B-yL-ss5">
-                                <rect key="frame" x="16" y="44" width="288" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="X6e-RG-HuH">
+                                <rect key="frame" x="16" y="44" width="288" height="524"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m7H-jn-vBw">
+                                        <rect key="frame" x="0.0" y="0.5" width="288" height="149"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="5ht-bI-eSH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="info" translatesAutoresizingMaskIntoConstraints="NO" id="egz-GF-fB3">
+                                        <rect key="frame" x="0.0" y="166" width="288" height="358"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VRH-9l-4IU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VRH-9l-4IU" firstAttribute="trailing" secondItem="r4B-yL-ss5" secondAttribute="trailing" constant="16" id="BRn-u2-9qx"/>
-                            <constraint firstItem="r4B-yL-ss5" firstAttribute="top" secondItem="VRH-9l-4IU" secondAttribute="top" id="es1-l2-bk5"/>
-                            <constraint firstItem="r4B-yL-ss5" firstAttribute="leading" secondItem="VRH-9l-4IU" secondAttribute="leading" constant="16" id="ocw-gw-I2Y"/>
+                            <constraint firstItem="X6e-RG-HuH" firstAttribute="top" secondItem="VRH-9l-4IU" secondAttribute="top" id="4sL-Cz-qSt"/>
+                            <constraint firstItem="VRH-9l-4IU" firstAttribute="trailing" secondItem="X6e-RG-HuH" secondAttribute="trailing" constant="16" id="5ly-nT-lP0"/>
+                            <constraint firstItem="VRH-9l-4IU" firstAttribute="bottom" secondItem="X6e-RG-HuH" secondAttribute="bottom" id="7Gw-v8-X9E"/>
+                            <constraint firstItem="X6e-RG-HuH" firstAttribute="leading" secondItem="9CM-Ba-DHy" secondAttribute="leading" constant="16" id="fTf-FB-AcR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="FCg-Ar-d4D"/>
                     <connections>
-                        <outlet property="infoLabel" destination="r4B-yL-ss5" id="hPK-B1-fAX"/>
+                        <outlet property="infoImageView" destination="m7H-jn-vBw" id="o7G-gF-xeE"/>
+                        <outlet property="infoTextView" destination="egz-GF-fB3" id="laq-rR-cMO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5x-Kh-iNi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2548" y="349"/>
+            <point key="canvasLocation" x="2542.5" y="348.59154929577466"/>
         </scene>
-        <!--About App-->
+        <!--Информация-->
         <scene sceneID="Np2-bk-Pd1">
             <objects>
                 <tableViewController id="3Mz-gR-hzV" customClass="TeamViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -132,7 +146,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Команда" image="person.2" catalog="system" id="dnc-z1-wFK"/>
-                    <navigationItem key="navigationItem" title="About App" id="seO-hn-hlv"/>
+                    <navigationItem key="navigationItem" title="Информация" id="seO-hn-hlv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozi-qQ-Ple" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,22 +160,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Keep It Simple and Swifty " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GGD-DA-Bo2">
-                                <rect key="frame" x="16" y="64" width="288" height="484"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="XHH-9G-afH">
+                                <rect key="frame" x="16" y="64" width="288" height="258"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testNaruto" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Cs-UD0">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="sxP-Kh-RMF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Keep It Simple and Swifty " translatesAutoresizingMaskIntoConstraints="NO" id="GGD-DA-Bo2">
+                                        <rect key="frame" x="0.0" y="218" width="288" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AER-VI-cpO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GGD-DA-Bo2" firstAttribute="top" secondItem="AER-VI-cpO" secondAttribute="top" constant="20" id="Fqe-qA-Mdr"/>
-                            <constraint firstItem="AER-VI-cpO" firstAttribute="bottom" secondItem="GGD-DA-Bo2" secondAttribute="bottom" constant="20" id="My3-4x-jyw"/>
-                            <constraint firstItem="AER-VI-cpO" firstAttribute="trailing" secondItem="GGD-DA-Bo2" secondAttribute="trailing" constant="16" id="aDJ-Jq-mi7"/>
-                            <constraint firstItem="GGD-DA-Bo2" firstAttribute="leading" secondItem="AER-VI-cpO" secondAttribute="leading" constant="16" id="eVo-KY-5hA"/>
+                            <constraint firstItem="AER-VI-cpO" firstAttribute="trailing" secondItem="XHH-9G-afH" secondAttribute="trailing" constant="16" id="9N7-g1-JwK"/>
+                            <constraint firstItem="XHH-9G-afH" firstAttribute="leading" secondItem="AER-VI-cpO" secondAttribute="leading" constant="16" id="VdO-cX-W24"/>
+                            <constraint firstItem="XHH-9G-afH" firstAttribute="top" secondItem="AER-VI-cpO" secondAttribute="top" constant="20" id="vv5-Jd-7LG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="e4p-gK-Zl8"/>
@@ -171,13 +195,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2RH-sE-7F0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300" y="-346"/>
+            <point key="canvasLocation" x="3300" y="-346.47887323943661"/>
         </scene>
     </scenes>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="person.2" catalog="system" width="128" height="82"/>
+        <image name="testNaruto" width="1346" height="1306"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
