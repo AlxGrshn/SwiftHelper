@@ -9,11 +9,17 @@ import UIKit
 
 class TeamViewController: UITableViewController {
     
-    var team: [Team] = []
+    private let team = Team.getMembersInfo()
+    private let appDescription = AppDescription.getAppDescription()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        view.backgroundColor = .darkGray
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let aboutAppVC = segue.destination as? AboutAppViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+        switch indexPath.section {
+        case 0: aboutAppVC.appDescription = appDescription
+        default: aboutAppVC.teamMember = team[indexPath.row]
+        }
     }
 }
 
@@ -21,34 +27,33 @@ class TeamViewController: UITableViewController {
 extension TeamViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        team.count
+        2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        team[section].broInfo.count
+        switch section {
+        case 0: return 1
+        default: return team.count
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "team", for: indexPath)
-        
-        let bro = team[indexPath.section]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         
-        content.text = bro.broInfo[indexPath.row]
-        
-        switch indexPath.row {
+        switch indexPath.section {
         case 0:
-            content.image = UIImage(systemName: Pictures.telegram.rawValue)
+            content.text = "О приложении"
         default:
-            content.image = UIImage(systemName: Pictures.git.rawValue)
+            content.text = team[indexPath.row].fullName
         }
 
-        //cell.backgroundColor = .lightGray
         cell.contentConfiguration = content
         return cell
     }
 }
 
+// MARK: - UITableViewDelegate
 extension TeamViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -65,7 +70,11 @@ extension TeamViewController {
             )
         )
         
-        infoLabel.text = team[section].name
+        switch section {
+        case 0: infoLabel.text = ""
+        default: infoLabel.text = "Команда"
+        }
+        
         setup(infoLabel)
         
         let contentView = UIView()
@@ -77,7 +86,6 @@ extension TeamViewController {
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.backgroundColor = .lightGray
     }
-
     
     func setup(_ label: UILabel) {
         label.font = UIFont.boldSystemFont(ofSize: 17)
