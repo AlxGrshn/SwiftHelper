@@ -43,7 +43,7 @@ extension TeamViewController {
         
         switch indexPath.section {
         case 0:
-            content.text = "О приложении"
+            content.text = "Описание"
         default:
             content.text = team[indexPath.row].fullName
         }
@@ -71,7 +71,7 @@ extension TeamViewController {
         )
         
         switch section {
-        case 0: infoLabel.text = ""
+        case 0: infoLabel.text = "О приложении"
         default: infoLabel.text = "Команда"
         }
         
