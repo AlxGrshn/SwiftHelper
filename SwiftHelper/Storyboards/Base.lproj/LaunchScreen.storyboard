@@ -17,19 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oXZ-bs-xbQ">
-                                <rect key="frame" x="45" y="273" width="300" height="298.33333333333331"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="a40-dC-3Rj"/>
-                                    <constraint firstAttribute="height" constant="300" id="eXC-vG-EXE"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo4" translatesAutoresizingMaskIntoConstraints="NO" id="oXZ-bs-xbQ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oXZ-bs-xbQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CpI-YC-S45"/>
-                            <constraint firstItem="oXZ-bs-xbQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="keN-h3-tJi"/>
+                            <constraint firstAttribute="trailing" secondItem="oXZ-bs-xbQ" secondAttribute="trailing" id="9kK-PF-qVO"/>
+                            <constraint firstAttribute="bottom" secondItem="oXZ-bs-xbQ" secondAttribute="bottom" id="O1c-Yd-tLm"/>
+                            <constraint firstItem="oXZ-bs-xbQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="OK0-La-Fxe"/>
+                            <constraint firstItem="oXZ-bs-xbQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="mIT-Ae-7j3"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="swift" catalog="system" width="128" height="108"/>
+        <image name="logo4" width="768" height="736"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
