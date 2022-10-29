@@ -327,5 +327,3 @@ extension SomeType: SomeProtocol, AnotherProtocol {
         ]
     }
 }
-
-
