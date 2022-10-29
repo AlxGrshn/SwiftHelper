@@ -21,9 +21,9 @@ struct Team {
     
     static func getMembersInfo() -> [Team] {
         [
-            Team(name: "Alexander", surname: nil, telegram: "@Frysed", git: "https://github.com/AlxGrshn"),
-            Team(name: "Artemy", surname: "Volkov", telegram: "@artvs18",  git: "https://github.com/artvs18"),
-            Team(name: "Danil", surname: "Kazakov", telegram: "@kdenononame",  git: "https://github.com/"),
+            Team(name: "Александр", surname: nil, telegram: "@Frysed", git: "https://github.com/AlxGrshn"),
+            Team(name: "Артемий", surname: "Волков", telegram: "@artvs18",  git: "https://github.com/artvs18"),
+            Team(name: "Данил", surname: "Казаков", telegram: "@kdenononame",  git: "https://github.com/"),
             Team(name: "Роман", surname: nil, telegram: "@romesky",  git: "https://github.com/Trome29")
         ]
     }
