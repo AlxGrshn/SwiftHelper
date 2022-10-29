@@ -1,7 +1,10 @@
 {
   "images" : [
     {
-      "filename" : "letvar.jpg",
+      "filename" : "guard.jpg",
+      "idiom" : "universal"
+    },
+    {
       "idiom" : "universal",
       "scale" : "1x"
     },

@@ -10,6 +10,7 @@ import UIKit
 class AboutAppViewController: UIViewController {
     
     @IBOutlet var textView: UITextView!
+    @IBOutlet var avatar: UIImageView!
     
     var appDescription: String?
     var teamMember: Team?
@@ -27,6 +28,6 @@ class AboutAppViewController: UIViewController {
         } else if appDescription != nil {
             textView.text = appDescription ?? ""
         }
+        avatar.image = UIImage(named: teamMember?.telegram ?? "")
     }
 }
-

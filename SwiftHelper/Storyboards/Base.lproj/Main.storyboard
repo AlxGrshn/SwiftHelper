@@ -84,7 +84,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="X6e-RG-HuH">
                                 <rect key="frame" x="16" y="44" width="288" height="524"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m7H-jn-vBw">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" image="info.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m7H-jn-vBw">
                                         <rect key="frame" x="0.0" y="0.5" width="288" height="149"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="5ht-bI-eSH"/>
@@ -190,6 +190,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="e4p-gK-Zl8"/>
                     <connections>
+                        <outlet property="avatar" destination="O9Z-Cs-UD0" id="Gc0-PV-kVl"/>
                         <outlet property="textView" destination="GGD-DA-Bo2" id="r90-ba-ABU"/>
                     </connections>
                 </viewController>
