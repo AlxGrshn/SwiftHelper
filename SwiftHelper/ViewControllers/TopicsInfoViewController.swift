@@ -9,10 +9,8 @@ import UIKit
 
 class TopicsInfoViewController: UIViewController {
     
-    
     @IBOutlet var infoTextView: UITextView!
     @IBOutlet var infoImageView: UIImageView!
-    
     
     var info: Topic!
     

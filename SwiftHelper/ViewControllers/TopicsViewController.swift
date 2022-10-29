@@ -9,10 +9,7 @@ import UIKit
 
 class TopicsViewController: UITableViewController {
     
-    private var filteredTopics: [Topic] = []
-    
     private let searchController = UISearchController(searchResultsController: nil)
-    
     private var searchBarIsEmpty: Bool {
         guard let text = searchController.searchBar.text else { return false }
         return text.isEmpty
@@ -20,8 +17,8 @@ class TopicsViewController: UITableViewController {
     private var isFiltering: Bool {
         searchController.isActive && !searchBarIsEmpty
     }
-    
-    var topics: [Topic] = Topic.getTopics()
+    private var filteredTopics: [Topic] = []
+    private var topics: [Topic] = Topic.getTopics()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,7 +94,7 @@ extension TopicsViewController {
 }
 
 // MARK: - UISearchResult Updating and UISearchControllerDelegate  Extension
-extension TopicsViewController: UISearchResultsUpdating, UISearchControllerDelegate {
+extension TopicsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text ?? "")
     }

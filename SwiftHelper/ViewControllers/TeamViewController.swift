@@ -8,6 +8,7 @@
 import UIKit
 
 class TeamViewController: UITableViewController {
+    
     private let team = Team.getMembersInfo()
     private let appDescription = AppDescription.getAppDescription()
     
@@ -52,6 +53,7 @@ extension TeamViewController {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension TeamViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -84,7 +86,6 @@ extension TeamViewController {
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.backgroundColor = .lightGray
     }
-
     
     func setup(_ label: UILabel) {
         label.font = UIFont.boldSystemFont(ofSize: 17)
