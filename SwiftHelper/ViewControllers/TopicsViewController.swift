@@ -69,7 +69,6 @@ extension TopicsViewController {
             topic = topics[indexPath.row]
         }
         
-        //let topic = topics[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = topic.title
         cell.contentConfiguration = content
