@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AboutAppViewController: UIViewController {
+class AboutTeamViewController: UIViewController {
     
     @IBOutlet var textView: UITextView!
     @IBOutlet var avatar: UIImageView!
@@ -16,21 +16,17 @@ class AboutAppViewController: UIViewController {
     var teamMember: Team?
     
     override func viewDidLoad() {
-        if teamMember != nil {
-            textView.text =
-            """
+        textView.text =
+                """
                 👨‍💻\(teamMember?.fullName ?? "")
                 
                 ☁️GitHub: \(teamMember?.git ?? "")
                 
                 📱Telegram: \(teamMember?.telegram ?? "")
                 """
-        } else if appDescription != nil {
-            textView.text = appDescription ?? ""
-        }
         avatar.image = UIImage(named: teamMember?.name ?? "")
     }
-
+    
     override func viewWillLayoutSubviews() {
         avatar.layer.cornerRadius = avatar.frame.width / 2
     }

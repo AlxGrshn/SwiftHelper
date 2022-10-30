@@ -17,8 +17,9 @@
 		30002588290899A2005DCC10 /* TopicsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30002587290899A2005DCC10 /* TopicsInfoViewController.swift */; };
 		30050574290933AE0009C5AB /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30050573290933AE0009C5AB /* TeamViewController.swift */; };
 		300505762909367E0009C5AB /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300505752909367E0009C5AB /* Team.swift */; };
+		30F2A8F3290ED16A00398B96 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F2A8F2290ED16A00398B96 /* MainViewController.swift */; };
 		C2A97EA4290B2DE00035F7F3 /* AppDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A97EA3290B2DE00035F7F3 /* AppDescription.swift */; };
-		C2A97EA6290B2FD20035F7F3 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A97EA5290B2FD20035F7F3 /* AboutAppViewController.swift */; };
+		C2A97EA6290B2FD20035F7F3 /* AboutTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A97EA5290B2FD20035F7F3 /* AboutTeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +35,9 @@
 		30002587290899A2005DCC10 /* TopicsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsInfoViewController.swift; sourceTree = "<group>"; };
 		30050573290933AE0009C5AB /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		300505752909367E0009C5AB /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		30F2A8F2290ED16A00398B96 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C2A97EA3290B2DE00035F7F3 /* AppDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDescription.swift; sourceTree = "<group>"; };
-		C2A97EA5290B2FD20035F7F3 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		C2A97EA5290B2FD20035F7F3 /* AboutTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,11 @@
 		3000257729087FDE005DCC10 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				30F2A8F2290ED16A00398B96 /* MainViewController.swift */,
 				3000257F29088A28005DCC10 /* TopicsViewController.swift */,
 				30002587290899A2005DCC10 /* TopicsInfoViewController.swift */,
 				30050573290933AE0009C5AB /* TeamViewController.swift */,
-				C2A97EA5290B2FD20035F7F3 /* AboutAppViewController.swift */,
+				C2A97EA5290B2FD20035F7F3 /* AboutTeamViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,8 +206,9 @@
 				08F2690D29071C980035B8B0 /* AppDelegate.swift in Sources */,
 				300505762909367E0009C5AB /* Team.swift in Sources */,
 				08F2690F29071C980035B8B0 /* SceneDelegate.swift in Sources */,
-				C2A97EA6290B2FD20035F7F3 /* AboutAppViewController.swift in Sources */,
+				C2A97EA6290B2FD20035F7F3 /* AboutTeamViewController.swift in Sources */,
 				30050574290933AE0009C5AB /* TeamViewController.swift in Sources */,
+				30F2A8F3290ED16A00398B96 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

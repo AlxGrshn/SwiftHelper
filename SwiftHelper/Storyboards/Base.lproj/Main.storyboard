@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bmr-pH-eYk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gIn-YZ-1zt">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,13 +9,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Gom-ZH-jEi">
+            <objects>
+                <viewController id="gIn-YZ-1zt" customClass="MainViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eKk-Rn-bp5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xue-r8-8k7">
+                                <rect key="frame" x="16" y="274" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMt-gS-vLY">
+                                <rect key="frame" x="111" y="388" width="98" height="38"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Вперед">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startTapped" destination="gIn-YZ-1zt" eventType="touchUpInside" id="V97-n3-2mu"/>
+                                    <segue destination="Bmr-pH-eYk" kind="presentation" modalPresentationStyle="fullScreen" id="ZgU-mZ-f6u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JAI-HF-36r"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xue-r8-8k7" firstAttribute="centerY" secondItem="eKk-Rn-bp5" secondAttribute="centerY" id="JaR-DJ-HaV"/>
+                            <constraint firstItem="JAI-HF-36r" firstAttribute="trailing" secondItem="xue-r8-8k7" secondAttribute="trailing" constant="16" id="WlQ-MN-pVp"/>
+                            <constraint firstItem="jMt-gS-vLY" firstAttribute="centerX" secondItem="eKk-Rn-bp5" secondAttribute="centerX" id="YQX-lQ-fpW"/>
+                            <constraint firstItem="jMt-gS-vLY" firstAttribute="top" secondItem="xue-r8-8k7" secondAttribute="bottom" constant="93.5" id="kKe-o7-ZUA"/>
+                            <constraint firstItem="xue-r8-8k7" firstAttribute="leading" secondItem="JAI-HF-36r" secondAttribute="leading" constant="16" id="r0R-U9-UMJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutAppLabel" destination="xue-r8-8k7" id="d8h-mI-9Kq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsf-UA-q4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="-18"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gKC-41-o3U">
             <objects>
                 <navigationController id="Bmr-pH-eYk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oK9-Dm-4Yo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="SLG-rg-olx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="g55-2b-Vwp" kind="relationship" relationship="rootViewController" id="GsW-dx-eUl"/>
@@ -149,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="2546" y="-346"/>
         </scene>
-        <!--About App View Controller-->
+        <!--About Team View Controller-->
         <scene sceneID="frp-wP-wo4">
             <objects>
-                <viewController id="CnS-pC-xlq" customClass="AboutAppViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CnS-pC-xlq" customClass="AboutTeamViewController" customModule="SwiftHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="olt-0O-8vG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
