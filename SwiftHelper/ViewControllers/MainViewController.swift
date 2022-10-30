@@ -18,8 +18,4 @@ class MainViewController: UIViewController {
         aboutAppLabel.text = info
     }
     
-    @IBAction func startTapped() {
-        
-    }
-    
 }

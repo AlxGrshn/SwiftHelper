@@ -30,7 +30,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="startTapped" destination="gIn-YZ-1zt" eventType="touchUpInside" id="V97-n3-2mu"/>
                                     <segue destination="Bmr-pH-eYk" kind="presentation" modalPresentationStyle="fullScreen" id="ZgU-mZ-f6u"/>
                                 </connections>
                             </button>
@@ -58,9 +57,10 @@
             <objects>
                 <navigationController id="Bmr-pH-eYk" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="oK9-Dm-4Yo"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="SLG-rg-olx">
+                    <navigationBar key="navigationBar" alpha="0.050000000000000003" contentMode="scaleToFill" largeTitles="YES" id="SLG-rg-olx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
