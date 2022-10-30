@@ -157,18 +157,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ZhP-ew-4ec">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZhP-ew-4ec">
                                 <rect key="frame" x="16" y="64" width="288" height="504"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Cs-UD0">
-                                        <rect key="frame" x="44" y="0.0" width="200" height="200"/>
+                                        <rect key="frame" x="64" y="0.0" width="160" height="160"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="O9Z-Cs-UD0" secondAttribute="height" multiplier="1:1" id="X79-sh-Jcy"/>
-                                            <constraint firstAttribute="height" constant="200" id="zvm-Zc-Pk0"/>
+                                            <constraint firstAttribute="height" constant="160" id="zvm-Zc-Pk0"/>
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Keep It Simple and Swifty " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GGD-DA-Bo2">
-                                        <rect key="frame" x="29" y="235" width="230.5" height="269"/>
+                                        <rect key="frame" x="29" y="177" width="230.5" height="327"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
