@@ -160,7 +160,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ZhP-ew-4ec">
                                 <rect key="frame" x="16" y="64" width="288" height="504"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Cs-UD0">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Cs-UD0">
                                         <rect key="frame" x="44" y="0.0" width="200" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="O9Z-Cs-UD0" secondAttribute="height" multiplier="1:1" id="X79-sh-Jcy"/>
