@@ -18,7 +18,7 @@ class AboutAppViewController: UIViewController {
     override func viewDidLoad() {
         if teamMember != nil {
             textView.text =
-                """
+            """
                 👨‍💻\(teamMember?.fullName ?? "")
                 
                 ☁️GitHub: \(teamMember?.git ?? "")
@@ -29,6 +29,9 @@ class AboutAppViewController: UIViewController {
             textView.text = appDescription ?? ""
         }
         avatar.image = UIImage(named: teamMember?.name ?? "")
-//        avatar.layer.cornerRadius = avatar.frame.width / 2
+    }
+
+    override func viewWillLayoutSubviews() {
+        avatar.layer.cornerRadius = avatar.frame.width / 2
     }
 }

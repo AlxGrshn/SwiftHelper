@@ -157,32 +157,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VZs-7S-eus">
-                                <rect key="frame" x="16" y="64" width="288" height="328"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Cs-UD0">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="154"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Keep It Simple and Swifty " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GGD-DA-Bo2">
-                                        <rect key="frame" x="0.0" y="174" width="288" height="154"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Cs-UD0">
+                                <rect key="frame" x="85" y="76" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="328" id="vd4-tY-VFN"/>
+                                    <constraint firstAttribute="width" secondItem="O9Z-Cs-UD0" secondAttribute="height" multiplier="1:1" id="gWu-QZ-PMZ"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Keep It Simple and Swifty " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GGD-DA-Bo2">
+                                <rect key="frame" x="16" y="271" width="288" height="228"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="228" id="rhz-dM-y6T"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AER-VI-cpO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VZs-7S-eus" firstAttribute="top" secondItem="AER-VI-cpO" secondAttribute="top" constant="20" id="IdB-qx-M9l"/>
-                            <constraint firstItem="VZs-7S-eus" firstAttribute="leading" secondItem="AER-VI-cpO" secondAttribute="leading" constant="16" id="eBl-1d-huu"/>
-                            <constraint firstItem="AER-VI-cpO" firstAttribute="trailing" secondItem="VZs-7S-eus" secondAttribute="trailing" constant="16" id="jFV-pD-3xW"/>
+                            <constraint firstItem="GGD-DA-Bo2" firstAttribute="top" secondItem="O9Z-Cs-UD0" secondAttribute="bottom" constant="35" id="S5V-aV-DV2"/>
+                            <constraint firstItem="O9Z-Cs-UD0" firstAttribute="top" secondItem="AER-VI-cpO" secondAttribute="top" constant="32" id="bxj-mw-avB"/>
+                            <constraint firstItem="AER-VI-cpO" firstAttribute="trailing" secondItem="O9Z-Cs-UD0" secondAttribute="trailing" constant="75" id="hQb-4d-soW"/>
+                            <constraint firstItem="AER-VI-cpO" firstAttribute="bottom" secondItem="GGD-DA-Bo2" secondAttribute="bottom" constant="69" id="mTA-j3-2Xn"/>
+                            <constraint firstItem="AER-VI-cpO" firstAttribute="trailing" secondItem="GGD-DA-Bo2" secondAttribute="trailing" constant="16" id="xln-Ou-bc3"/>
+                            <constraint firstItem="GGD-DA-Bo2" firstAttribute="leading" secondItem="AER-VI-cpO" secondAttribute="leading" constant="16" id="yib-TX-gmo"/>
+                            <constraint firstItem="O9Z-Cs-UD0" firstAttribute="leading" secondItem="AER-VI-cpO" secondAttribute="leading" constant="85" id="z3w-mG-3Ex"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="e4p-gK-Zl8"/>
