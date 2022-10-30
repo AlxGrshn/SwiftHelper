@@ -18,6 +18,8 @@ class TopicsInfoViewController: UIViewController {
         super.viewDidLoad()
         title = info.title
         infoTextView.text = info.description
+        
         infoImageView.image = UIImage(named: info.title)
     }
+
 }

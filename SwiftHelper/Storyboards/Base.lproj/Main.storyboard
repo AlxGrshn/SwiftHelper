@@ -81,20 +81,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="X6e-RG-HuH">
-                                <rect key="frame" x="16" y="44" width="288" height="524"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="X6e-RG-HuH">
+                                <rect key="frame" x="16" y="64" width="288" height="504"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" image="info.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m7H-jn-vBw">
-                                        <rect key="frame" x="0.0" y="0.5" width="288" height="149"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="5ht-bI-eSH"/>
-                                        </constraints>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="300" image="info.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m7H-jn-vBw">
+                                        <rect key="frame" x="0.0" y="0.5" width="288" height="19"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="info" translatesAutoresizingMaskIntoConstraints="NO" id="egz-GF-fB3">
-                                        <rect key="frame" x="0.0" y="166" width="288" height="358"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="info" translatesAutoresizingMaskIntoConstraints="NO" id="egz-GF-fB3">
+                                        <rect key="frame" x="0.0" y="36" width="288" height="468"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -103,7 +100,7 @@
                         <viewLayoutGuide key="safeArea" id="VRH-9l-4IU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="X6e-RG-HuH" firstAttribute="top" secondItem="VRH-9l-4IU" secondAttribute="top" id="4sL-Cz-qSt"/>
+                            <constraint firstItem="X6e-RG-HuH" firstAttribute="top" secondItem="VRH-9l-4IU" secondAttribute="top" constant="20" id="4sL-Cz-qSt"/>
                             <constraint firstItem="VRH-9l-4IU" firstAttribute="trailing" secondItem="X6e-RG-HuH" secondAttribute="trailing" constant="16" id="5ly-nT-lP0"/>
                             <constraint firstItem="VRH-9l-4IU" firstAttribute="bottom" secondItem="X6e-RG-HuH" secondAttribute="bottom" id="7Gw-v8-X9E"/>
                             <constraint firstItem="X6e-RG-HuH" firstAttribute="leading" secondItem="9CM-Ba-DHy" secondAttribute="leading" constant="16" id="fTf-FB-AcR"/>
