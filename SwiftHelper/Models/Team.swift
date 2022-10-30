@@ -28,9 +28,3 @@ struct Team {
         ]
     }
 }
-
-enum Pictures: String {
-    case name = "person.circle.fill"
-    case telegram = "paperplane.circle.fill"
-    case git = "link.circle.fill"
-}

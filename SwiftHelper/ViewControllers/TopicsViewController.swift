@@ -71,7 +71,11 @@ extension TopicsViewController {
             topic = topics[indexPath.row]
         }
         
-        //let topic = topics[indexPath.row]
+        cell.layer.cornerRadius = 12
+        cell.layer.borderColor = UIColor.systemBackground.cgColor
+        cell.layer.borderWidth = 3
+        cell.backgroundColor = .systemGray6
+        
         var content = cell.defaultContentConfiguration()
         content.text = topic.title
         cell.contentConfiguration = content

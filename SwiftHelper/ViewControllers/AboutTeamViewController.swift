@@ -16,15 +16,20 @@ class AboutTeamViewController: UIViewController {
     var teamMember: Team?
     
     override func viewDidLoad() {
-        textView.text =
-                """
-                👨‍💻\(teamMember?.fullName ?? "")
-                
-                ☁️GitHub: \(teamMember?.git ?? "")
-                
-                📱Telegram: \(teamMember?.telegram ?? "")
-                """
-        avatar.image = UIImage(named: teamMember?.name ?? "")
+        if teamMember != nil {
+            textView.text =
+                    """
+                    👨‍💻\(teamMember?.fullName ?? "")
+                    
+                    ☁️GitHub: \(teamMember?.git ?? "")
+                    
+                    📱Telegram: \(teamMember?.telegram ?? "")
+                    """
+            avatar.image = UIImage(named: teamMember?.name ?? "")
+        } else if appDescription != nil {
+            textView.text = appDescription
+            avatar.image = UIImage(named: "logo")
+        }
     }
     
     override func viewWillLayoutSubviews() {
