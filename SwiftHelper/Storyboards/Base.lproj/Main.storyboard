@@ -160,7 +160,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="XHH-9G-afH">
                                 <rect key="frame" x="16" y="64" width="288" height="258"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testNaruto" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Cs-UD0">
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Cs-UD0">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="sxP-Kh-RMF"/>
@@ -200,8 +200,8 @@
         <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
+        <image name="logo1" width="1002" height="800"/>
         <image name="person.2" catalog="system" width="128" height="82"/>
-        <image name="testNaruto" width="1346" height="1306"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

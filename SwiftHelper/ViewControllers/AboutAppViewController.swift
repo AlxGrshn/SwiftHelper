@@ -28,6 +28,7 @@ class AboutAppViewController: UIViewController {
         } else if appDescription != nil {
             textView.text = appDescription ?? ""
         }
-        avatar.image = UIImage(named: teamMember?.telegram ?? "")
+        avatar.image = UIImage(named: teamMember?.name ?? "")
+//        avatar.layer.cornerRadius = avatar.frame.width / 2
     }
 }
