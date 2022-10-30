@@ -9,10 +9,10 @@ import UIKit
 
 class TopicsViewController: UITableViewController {
     
-    private var filteredTopics: [Topic] = []
-    
+    // MARK: Private properties
     private let searchController = UISearchController(searchResultsController: nil)
-    
+    private var filteredTopics: [Topic] = []
+    private var topics: [Topic] = Topic.getTopics()
     private var searchBarIsEmpty: Bool {
         guard let text = searchController.searchBar.text else { return false }
         return text.isEmpty
@@ -21,8 +21,7 @@ class TopicsViewController: UITableViewController {
         searchController.isActive && !searchBarIsEmpty
     }
     
-    var topics: [Topic] = Topic.getTopics()
-    
+    // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
@@ -34,12 +33,11 @@ class TopicsViewController: UITableViewController {
         searchController.searchBar.placeholder = "Введите тему"
         navigationItem.searchController = searchController
         definesPresentationContext = true
-        
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let relatedInfoVC = segue.destination  as? TopicsInfoViewController
+        guard let relatedInfoVC = segue.destination  as? TopicsInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let topic: Topic
         if isFiltering {
@@ -47,7 +45,7 @@ class TopicsViewController: UITableViewController {
         } else {
             topic = topics[indexPath.row]
         }
-        relatedInfoVC?.info = topic
+        relatedInfoVC.info = topic
     }
 }
 
@@ -62,8 +60,7 @@ extension TopicsViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "topic", for: indexPath)
-        
-        var topic: Topic
+        let topic: Topic
         
         if isFiltering {
             topic = filteredTopics[indexPath.row]

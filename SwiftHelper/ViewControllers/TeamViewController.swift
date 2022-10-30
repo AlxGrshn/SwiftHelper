@@ -9,9 +9,11 @@ import UIKit
 
 class TeamViewController: UITableViewController {
     
+    // MARK: - Private properties
     private let team = Team.getMembersInfo()
     private let appDescription = AppDescription.getAppDescription()
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let aboutAppVC = segue.destination as? AboutTeamViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
@@ -25,7 +27,6 @@ class TeamViewController: UITableViewController {
 
 // MARK: - UITableViewDataSource
 extension TeamViewController {
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         2
     }
@@ -58,7 +59,6 @@ extension TeamViewController {
 
 // MARK: - UITableViewDelegate
 extension TeamViewController {
-    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let infoLabel = UILabel(
             frame: CGRect(
@@ -75,14 +75,11 @@ extension TeamViewController {
         }
         
         setup(infoLabel)
-        
         let contentView = UIView()
         contentView.addSubview(infoLabel)
-        
         return contentView
     }
   
-    
     func setup(_ label: UILabel) {
         label.font = UIFont.boldSystemFont(ofSize: 17)
         label.textColor = .secondaryLabel

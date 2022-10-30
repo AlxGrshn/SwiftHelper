@@ -9,23 +9,26 @@ import UIKit
 
 class AboutTeamViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet var textView: UITextView!
     @IBOutlet var avatar: UIImageView!
     
-    var appDescription: String?
-    var teamMember: Team?
+    // MARK: - Public properties
+    var appDescription: String!
+    var teamMember: Team!
     
+    // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         if teamMember != nil {
             textView.text =
                     """
-                    👨‍💻\(teamMember?.fullName ?? "")
+                    👨‍💻\(teamMember.fullName)
                     
-                    ☁️GitHub: \(teamMember?.git ?? "")
+                    ☁️GitHub: \(teamMember.git)
                     
-                    📱Telegram: \(teamMember?.telegram ?? "")
+                    📱Telegram: \(teamMember.telegram)
                     """
-            avatar.image = UIImage(named: teamMember?.name ?? "")
+            avatar.image = UIImage(named: teamMember.name)
         } else if appDescription != nil {
             textView.text = appDescription
             avatar.image = UIImage(named: "logo")

@@ -9,11 +9,14 @@ import UIKit
 
 class TopicsInfoViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet var infoTextView: UITextView!
     @IBOutlet var infoImageView: UIImageView!
     
+    // MARK: - Public properties
     var info: Topic!
     
+    // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         title = info.title
