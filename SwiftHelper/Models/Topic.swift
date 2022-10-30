@@ -343,3 +343,9 @@ extension SomeType: SomeProtocol, AnotherProtocol {
         ]
     }
 }
+
+
+enum Editor: String {
+    case pencil = "pencil"
+    case pencilTwo = "pencil.square"
+}

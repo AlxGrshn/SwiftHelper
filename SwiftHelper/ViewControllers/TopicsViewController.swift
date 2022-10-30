@@ -25,6 +25,7 @@ class TopicsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
+        
         navigationItem.leftBarButtonItem = editButtonItem
         
         // Setup Search Controller
